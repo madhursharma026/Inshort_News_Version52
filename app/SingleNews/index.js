@@ -75,7 +75,7 @@ const SingleNews = ({ item }) => {
       return;
     }
     try {
-      const response = await fetch("http://192.168.1.33:5001/graphql", {
+      const response = await fetch(APIURL, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
